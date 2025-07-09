@@ -1,6 +1,8 @@
 import type { Config } from "@react-router/dev/config";
 
 export default {
-  // Server-side render by default, to enable SPA mode set this to `false`
+  // Keep SSR enabled for initial load, but serve static assets from Cloudflare
   ssr: true,
+  // Enable static prerendering for better performance
+  prerender: ["/"]
 } satisfies Config;
