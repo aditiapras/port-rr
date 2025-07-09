@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block specific directories if needed in the future
+# Disallow: /private/
+# Disallow: /admin/
+
+# Point to sitemap
+Sitemap: https://aditiaprs.com/sitemap.xml
