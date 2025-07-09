@@ -44,41 +44,6 @@ npm run build
 
 ## Deployment
 
-### Cloudflare Workers Deployment
-
-This project is configured for deployment on Cloudflare Workers. To deploy:
-
-1. **Build the project:**
-   ```bash
-   npm run build
-   ```
-
-2. **Deploy to Cloudflare Workers:**
-   ```bash
-   npm run deploy
-   ```
-
-3. **Preview locally:**
-   ```bash
-   npm run preview
-   ```
-
-The deployment includes:
-- ✅ Static asset serving from Cloudflare's edge
-- ✅ Prerendered HTML for optimal performance
-- ✅ TypeScript and React Router support
-- ✅ TailwindCSS styling
-- ✅ Optimized bundling and asset management
-
-### Configuration
-
-The project includes a `wrangler.toml` configuration file with the following settings:
-
-- **Worker Script**: `worker.js` - Handles routing and asset serving
-- **Assets**: Static files are served from `build/client/` directory
-- **Build Command**: Automatically runs `npm run build` before deployment
-- **Node.js Compatibility**: Enabled for broader API support
-
 ### Docker Deployment
 
 To build and run using Docker:
